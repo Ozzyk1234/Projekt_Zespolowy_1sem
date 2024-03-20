@@ -59,7 +59,6 @@ const authOptions = {
           userName: token.userName,
         },
       };
-      return session;
     },
   },
   session: {
