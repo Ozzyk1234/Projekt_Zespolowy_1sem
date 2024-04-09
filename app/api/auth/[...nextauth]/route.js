@@ -43,8 +43,6 @@ const authOptions = {
         return {
           ...token,
           id: user.id,
-          description: user.description,
-          userName: user.userName,
         };
       }
       return token;
@@ -55,8 +53,6 @@ const authOptions = {
         user: {
           ...session.user,
           id: token.id,
-          description: token.description,
-          userName: token.userName,
         },
       };
     },
