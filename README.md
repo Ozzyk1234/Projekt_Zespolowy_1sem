@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projekt Joinmeal
 
-## Getting Started
+## Wprowadzenie
 
-First, run the development server:
+Project JoinMeal to aplikacja zbudowana na frameworku Next.js, używająca różnych bibliotek i narzędzi, aby zapewnić bogatą funkcjonalność i dobre doświadczenie użytkownika.
 
-```bash
+## Instalacja
+
+Aby rozpocząć pracę z projektem, należy najpierw zainstalować wszystkie zależności. Wymagane jest posiadanie zainstalowanego Node.js oraz npm.
+
+### Sklonuj repozytorium:
+
+Skopiuj kod
+git clone <URL_REPO>
+Przejdź do katalogu projektu:
+
+Skopiuj kod
+cd project-joinmeal
+Zainstaluj zależności:
+
+Skopiuj kod
+npm install
+Uruchamianie projektu
+Aby uruchomić serwer deweloperski, wykonaj następujące polecenie:
+
+Skopiuj kod
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Następnie otwórz http://localhost:3000 w przeglądarce, aby zobaczyć działającą aplikację.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Struktura projektu
+Główne pliki i katalogi projektu to:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+app/: zawiera strony aplikacji.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+public/: zawiera zasoby publiczne, takie jak obrazy i inne pliki statyczne.
 
-## Learn More
+styles/: zawiera pliki stylów CSS.
 
-To learn more about Next.js, take a look at the following resources:
+components/: zawiera komponenty React używane w aplikacji.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+prisma/: zawiera konfigurację Prisma ORM i migracje bazy danych.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+package.json: plik konfiguracyjny npm zawierający zależności i skrypty.
 
-## Deploy on Vercel
+## Główne funkcje
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Autoryzacja: Projekt używa next-auth do zarządzania autoryzacją użytkowników.
+ORM: Prisma ORM do interakcji z bazą danych.
+UI/UX: Komponenty React oraz TailwindCSS do stylizacji.
+Skrypty
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Poniżej znajdują się skrypty zdefiniowane w package.json:
+
+Uruchamia serwer deweloperski. Skopiuj kod:
+
+**npm run dev**
+
+Generuje pliki Prisma, przeprowadza migracje i buduje projekt Next.js. Skopiuj kod:
+
+**npm run build**
+
+Uruchamia zbudowaną aplikację Next.js. Skopiuj kod:
+
+**npm run start**
+
+Generuje pliki Prisma po instalacji zależności. Skopiuj kod:
+
+**npm run postinstall**
+
+## Zależności
+
+Projekt korzysta z wielu zależności, w tym:
+@prisma/client: Interfejs klienta Prisma.
+
+next:
+Framework Next.js.
+
+react i react-dom: Biblioteki React.
+
+tailwindcss: Narzędzie do stylizacji CSS.
+
+next-auth: Biblioteka do autoryzacji w Next.js.
+
+Pełna lista zależności znajduje się w pliku package.json.
+
+## Deploy na Vercel
+
+Najłatwiejszym sposobem na wdrożenie aplikacji Next.js jest użycie platformy Vercel, twórców Next.js. Aby wdrożyć aplikację na Vercel, wykonaj poniższe kroki:
+
+Zarejestruj się na Vercel.
+Połącz swoje repozytorium z Vercel.
+Postępuj zgodnie z instrukcjami na Vercel, aby wdrożyć aplikację.
+Więcej informacji na temat wdrażania aplikacji Next.js można znaleźć w dokumentacji Next.js.
